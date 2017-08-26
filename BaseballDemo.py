@@ -13,7 +13,7 @@ def get_yesterdays_mlb_scores():
             "fordate": str(int(time.strftime("%Y%m%d"))-1)
         },
         headers={
-            "Authorization": "Basic " + base64.b64encode('{}:{}'.format('bewal416','').encode('utf-8')).decode('ascii')
+            "Authorization": "Basic " + base64.b64encode('{}:{}'.format('bewal416','thatsaloy4').encode('utf-8')).decode('ascii')
         }
     )
 
