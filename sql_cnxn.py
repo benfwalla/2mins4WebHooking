@@ -8,7 +8,7 @@ def create_game_row(game_data):
 
 	add_game = ("INSERT INTO gameScore "
                 "(away_team, away_score, home_team, home_score) "
-                "VALUES (%s, %s, %s, %s)"
+                "VALUES (%s, %s, %s, %s)")
 
 	cursor.execute(add_game, game_data)
 
