@@ -1,5 +1,5 @@
 import base64, requests, time, json
-#from sql_cnxn import create_game_row
+from sql_cnxn import create_game_row
 
 
 # TODO: Return tuple data of the NHL 2015-2016 and 2016-2017 seasons
@@ -17,7 +17,7 @@ def get_past_scores(beg_year, end_year, beg_date, end_date):
 					"fordate" : "{}".format(date)
 				},
 				headers = {
-				"Authorization": "Basic " + base64.b64encode('{}:{}'.format('bewal416','thatsaloy4').encode('utf-8')).decode('ascii')
+				"Authorization": "Basic " + base64.b64encode('{}:{}'.format('bewal416','').encode('utf-8')).decode('ascii')
 				}
 			)
 			
@@ -52,7 +52,7 @@ def get_today_scores():
 				"fordate": time.strftime("%Y%m%d"),
 			},
 			headers = {
-			"Authorization": "Basic " + base64.b64encode('{}:{}'.format('bewal416','thatsaloy4').encode('utf-8')).decode('ascii')
+			"Authorization": "Basic " + base64.b64encode('{}:{}'.format('bewal416','').encode('utf-8')).decode('ascii')
 			}
 		)
 
